@@ -1,0 +1,234 @@
+body {
+    font-family: 'Dangrek', sans-serif;
+    background-image: url('images/background.gif');
+    padding: 20px;
+    color: #e2388a;
+    text-align: center;
+}
+
+h1 {
+    font-size: 5rem;
+    font-family: "Bagel Fat One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: #ff97cd;
+    text-shadow: 
+        -3px -3px 0px rgba(255, 255, 255, 0.8),  
+         4px  4px 0px #e7288e,                
+         6px  6px 0px #b02078;
+    margin-top: 30px;
+}
+
+#paw {
+    height: 170px;
+    position: relative; 
+    top: 65px;          
+}
+
+#icon {
+    height: 130px;
+    position: relative; 
+    top: 40px;          
+}
+section {
+    background: linear-gradient( to top,
+    #f9d8e4 10%, #f288c0 100%);
+    border: 5px solid #cf257d;
+    border-radius: 20px;
+    box-shadow: 
+        inset 3px 3px 5px rgba(255,255,255,0.7),
+        0 5px 4px #b02078,
+        0 8px 15px rgba(0,0,0,0.3);
+    margin: 50px auto;
+    width: 80%;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #fff;
+    text-shadow: 2px 2px 0 #e7288e, 3px 3px 0 #b02078;
+}
+
+h3 {
+    margin-top: 3px;
+}
+
+#create .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+#create input, #create select {
+    padding: 8px 10px;
+    border-radius: 10px;
+    border: 2px solid #e2388a;
+    background: #fbe0f2;
+    color: #e2388a;
+    font-size: 1rem;
+    text-align: center;
+}
+
+#createPet {
+    padding: 5px 40px;
+    margin-top: 40px;
+    border-radius: 15px;
+    border: 5px solid #e2388a;
+    background: linear-gradient(to bottom, #ff9adf, #e7288e);
+    color: #fff;
+    font-family: 'Dangrek', sans-serif;
+    font-size: 1.6rem;
+    cursor: pointer;
+    box-shadow:
+        inset 0 2px 0 rgba(255,255,255,0.7),
+        0 4px 0 #b02078,
+        0 6px 10px rgba(0,0,0,0.3);
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+#randomName {
+    padding: 1px 15px;
+    border-radius: 7px;
+    border: 3px solid #e2388a;
+    background: linear-gradient(to bottom, #ff9adf, #e7288e);
+    color: #fff;
+    font-family: 'Dangrek', sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow:
+        inset 0 2px 0 rgba(255,255,255,0.7),
+        0 4px 0 #b02078,
+        0 6px 10px rgba(0,0,0,0.3);
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+    margin-bottom: 3px;
+}
+
+#create button:hover {
+    background: linear-gradient(to bottom, #ffb3e6, #ff4fae);
+    box-shadow:
+        inset 0 3px 0 rgba(255,255,255,0.85),
+        0 5px 0 #b02078,
+        0 8px 14px rgba(0,0,0,0.35);
+    transform: translateY(-2px);
+}
+
+#petsContainer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.pet {
+    position: relative;
+    width: 240px;
+    height: 350px;
+    padding: 5px;
+    margin-bottom: 30px;
+    background: linear-gradient(135deg, #f9d8e4, #f1c3db);
+    border: 4px solid #e2388a;
+    border-radius: 20px;
+    box-shadow:
+        inset 2px 2px 5px rgba(255,255,255,0.7),
+        0 4px 0 #b02078,
+        0 6px 10px rgba(0,0,0,0.3);
+    transition: transform 0.1s ease;
+    object-fit: contain;
+}
+
+.pet p {
+    margin: 0;
+}
+
+.pet img {
+    width: 150px;
+    height: 150px;
+    image-rendering: pixelated;
+    margin: 0;
+    border-radius: 50%;
+
+}
+
+.nap,
+.eat,
+.play {
+    padding: 5px 14px;
+    border-radius: 5px;
+    border: 1px solid #e2388a;
+    background: linear-gradient(to bottom, #ff9adf, #e7288e);
+    color: #fff;
+    font-size: 0.8rem;
+    cursor: pointer;
+    box-shadow:
+        inset 0 2px 0 rgba(255,255,255,0.7),
+        0 4px 0 #b02078,
+        0 6px 10px rgba(0,0,0,0.3);
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+    margin:10px 8px 15px 8px;
+}
+
+.nap:hover,
+.eat:hover,
+.play:hover {
+    background: linear-gradient(to bottom, #ffb3e6, #ff4fae);
+    box-shadow:
+        inset 0 3px 0 rgba(255,255,255,0.85),
+        0 5px 0 #b02078,
+        0 8px 14px rgba(0,0,0,0.35);
+    transform: translateY(-2px);
+}
+
+#log textarea {
+    width: 90%;
+    max-width: 500px;
+    border-radius: 15px;
+    border: 5px solid #e2388a;
+    background: #fbe0f2;
+    color: #e2388a;
+    padding: 10px;
+    font-family: 'Dangrek', sans-serif;
+    font-size: 1rem;
+    resize: none;
+    box-shadow:
+        inset 2px 2px 5px rgba(255,255,255,0.7),
+        0 4px 0 #b02078,
+        0 6px 10px rgba(0,0,0,0.3);
+}
+
+.emoji {
+position: absolute;
+    top: 20%;  
+    transform: translate(-50%, -50%); 
+    font-size: 32px;
+    z-index: 10; 
+    pointer-events: none; 
+    animation: floatUp 2s ease-out forwards;
+}
+
+@keyframes floatUp {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+}
+
+.playing {
+    animation: jump 0.4s ease-in-out infinite alternate;
+}
+
+@keyframes jump {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-15px);
+    }
+}

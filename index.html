@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamagotchi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Dangrek&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1><img src="images/dog_icon.png" id="icon"> TAMAGOTCHI <img src="images/paw_icon.png" id="paw"></h1>
+
+<section id="create">
+    <h2>Create your pet</h2>
+
+    <div class="row">
+        <input type="text" id="name" placeholder="Type a name">
+        <p>or</p>
+        <button id="randomName">Generate name</button>
+        <select id="animalType">
+            <option value="dog">Dog</option>
+            <option value="cat">Cat</option>
+            <option value="rabbit">Rabbit</option>
+            <option value="hamster">Hamster</option>
+        </select>
+    </div>
+    <button id="createPet">Create</button>
+</section>
+
+<section id="pets">
+    <h2>My pets</h2>
+    <div id="petsContainer"></div>
+</section>
+
+<section id="log">
+    <h2>Activity log</h2>
+    <textarea id="logActivity" rows="10" cols="50" readonly></textarea>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
